@@ -20,11 +20,10 @@ End of algorithm
 ## Evaluation Function
 In this project, we will use the 2D Levy evaluation function to test genetic algorithms. The Levy function is a well-known optimization function that is used as a challenge for optimization algorithms. It is defined as follows:
 
-$$f(x, y) = sin^2(πw_1) + [(w_1 - 1)^2(1 + 10sin^2(πw_1 + 1))] + [(w_2 - 1)^2(1 + sin ^2(2πw_2))]
-$$
+$$f(x, y) = sin^2(πw_1) + [(w_1 - 1)^2(1 + 10sin^2(πw_1 + 1))] + [(w_2 - 1)^2(1 + sin ^2(2πw_2))]$$
 where $w_1 = 1 + \frac{x - 1}{4}$ and $w_2 = 1 + \frac{y - 1}{4}$
 
-![Evaluation Function - Levy Function](levy_function.png)
+![Evaluation Function - Levy Function](images/Levy_Function.png)
 
 Features of the evaluation function:
 - Dimension: 2
@@ -44,8 +43,8 @@ Below are 2 animated examples of the operation of the algorithms of this project
 Below is a table with the results obtained for each algorithm and evaluation function:
 | Algorithm             | Parameters   | Minimum Found      |
 |-----------------------|-----------------------|--------------------|
-| Gradiente Descendente | learningRate=0.06, maxIter=50                  |        2.4189      |
-| Algoritmo Genético 	  | maxIter=50, numParticles=100, chromLength=40, probCross=0.5, probMut=0.2                  |       0.0002       |
+| Gradient Decent       | learningRate=0.06, maxIter=50                  |        2.4189      |
+| Genetic Algorithm 	| maxIter=50, numParticles=100, chromLength=40, probCross=0.5, probMut=0.2                  |       0.0002       |
 
 ## Conclusions
 The tests and evaluations carried out demonstrate the superior performance of the genetic algorithms compared to the gradient descent algorithm. Genetic algorithms offer a more robust and efficient solution for the optimization of functions, especially in complex problems with multiple local minima. These results support its utility in biological applications and other research areas.
